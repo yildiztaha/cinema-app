@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+  }
+
+  .ticket {
+    width: 400px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  .ticket h2 {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+    text-transform: uppercase;
+  }
+
+  .ticket p {
+    margin: 10px 0;
+  }
+
+  .ticket .ticket-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #eee;
+  }
+
+  .ticket .ticket-info p {
+    margin: 0;
+  }
+
+  .ticket .ticket-info .ticket-price {
+    font-weight: bold;
+    color: #f00;
+  }
+
+  .ticket .ticket-info .ticket-seats {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .ticket .ticket-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+  }
+
+  .ticket .ticket-details p {
+    margin: 0;
+  }
+
+  .ticket .ticket-details .ticket-date {
+    font-weight: bold;
+  }
+
+  .ticket .ticket-details .ticket-time {
+    text-transform: uppercase;
+  }

@@ -1,13 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Seats from "./components/Seats.jsx"
+import Pay from "./components/Pay"
 import reportWebVitals from './reportWebVitals';
-
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import Ticket from './components/Ticket';
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Seats></Seats>,
+  },
+  {
+    path:"/pay",
+    element:<Pay></Pay>
+  },
+  {
+    path:"/ticket",
+    element:<Ticket></Ticket>
+  }
+]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+     <RouterProvider router={router} />
   </React.StrictMode>
 );
 
